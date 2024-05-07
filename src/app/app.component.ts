@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { Persona } from './persona.model';
+import { PersonaComponent } from './persona/persona.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule],
+  imports: [RouterOutlet, FormsModule, PersonaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
